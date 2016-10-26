@@ -2,7 +2,7 @@ TODO:
 
 I People
 
-1. get Entity&Transform
+1. get Transform
 	https://developers.google.com/+/web/api/rest/latest/people/get
 	https://developers.google.com/+/web/api/rest/latest/people#resource
 
