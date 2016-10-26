@@ -1,0 +1,29 @@
+TODO:
+
+I People
+
+1. get Entity&Transform
+	https://developers.google.com/+/web/api/rest/latest/people/get
+	https://developers.google.com/+/web/api/rest/latest/people#resource
+
+2. listByActivity Entity&Transform (2 transforms: plusoners, resharers)
+	https://developers.google.com/+/web/api/rest/latest/people/listByActivity
+	
+II Activities
+
+1. list
+	https://developers.google.com/+/web/api/rest/latest/activities/list
+
+2. get
+	https://developers.google.com/+/web/api/rest/latest/activities/get
+
+3. search
+	https://developers.google.com/+/web/api/rest/latest/activities/search
+
+III Comments
+
+1. list
+	https://developers.google.com/+/web/api/rest/latest/comments/list
+
+2. get
+	https://developers.google.com/+/web/api/rest/latest/comments/get
