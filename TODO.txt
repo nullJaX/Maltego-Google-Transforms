@@ -2,9 +2,7 @@ TODO:
 
 I People
 
-1. get Transform
-	https://developers.google.com/+/web/api/rest/latest/people/get
-	https://developers.google.com/+/web/api/rest/latest/people#resource
+1. User2URLs; User2Organizations, User2Places, User2Skills
 
 2. listByActivity Entity&Transform (2 transforms: plusoners, resharers)
 	https://developers.google.com/+/web/api/rest/latest/people/listByActivity
