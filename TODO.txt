@@ -2,26 +2,15 @@ TODO:
 
 I People
 
-1. User2URLs; User2Organizations, User2Places, User2Skills
+1. User2URLs; User2Organizations, User2Places, User2Skills (v2.0)
 
-2. listByActivity Entity&Transform (2 transforms: plusoners, resharers)
+2. listByActivity Entity&Transform (errors diring the execution)
 	https://developers.google.com/+/web/api/rest/latest/people/listByActivity
 	
 II Activities
 
-1. list
+1. list (must be improved later)
 	https://developers.google.com/+/web/api/rest/latest/activities/list
 
-2. get
-	https://developers.google.com/+/web/api/rest/latest/activities/get
-
-3. search
+2. search (must be improved later)
 	https://developers.google.com/+/web/api/rest/latest/activities/search
-
-III Comments
-
-1. list
-	https://developers.google.com/+/web/api/rest/latest/comments/list
-
-2. get
-	https://developers.google.com/+/web/api/rest/latest/comments/get
