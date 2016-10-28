@@ -1,7 +1,7 @@
 TODO:
 
 I People
-	1. User2URLs; User2Organizations, User2Places, User2Skills (implementation in v2.0)
+	1. User2URLs(implemented), User2Organizations, User2Places, User2Skills (implementation in v2.0)
 	2. listByActivity (errors during the execution)
 		https://developers.google.com/+/web/api/rest/latest/people/listByActivity
 	
@@ -10,3 +10,6 @@ II Activities
 		https://developers.google.com/+/web/api/rest/latest/activities/list
 	2. search (must be improved in v2.0)
 		https://developers.google.com/+/web/api/rest/latest/activities/search
+
+
+Need to solve the XML-Unicode Problem !!!
