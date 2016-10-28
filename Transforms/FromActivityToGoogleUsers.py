@@ -18,7 +18,13 @@ try:
 	service = apiclient.discovery.build('plus', 'v1', http=httplib2.Http(), developerKey=GOOGLEPLUS_API_KEY)
 
 	#get query result
-	people_feed = service.people().listByActivity(activityId=Q,maxResults=100,collection='plusoners').execute()
+	#NOTE: this is the reduced amount of maximum results because my maltego client
+	#was raising error of too long XML stream,
+	#if you want to get more, just change it (max available: 100)
+	max=15
+	
+	
+	people_feed = service.people().listByActivity(activityId=Q,maxResults=max,collection='plusoners').execute()
 
 	for person in people_feed['items']:
 		preImageURL = person['image']
@@ -32,7 +38,7 @@ try:
 		ent.setDisplayInformation(person['displayName'])
 		me.heartbeat()
 	
-	people_feed = service.people().listByActivity(activityId=Q,maxResults=100,collection='resharers').execute()
+	people_feed = service.people().listByActivity(activityId=Q,maxResults=max,collection='resharers').execute()
 
 	for person in people_feed['items']:
 		preImageURL = person['image']

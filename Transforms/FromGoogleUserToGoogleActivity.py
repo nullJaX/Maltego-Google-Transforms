@@ -18,7 +18,12 @@ try:
 	service = apiclient.discovery.build('plus', 'v1', http=httplib2.Http(), developerKey=GOOGLEPLUS_API_KEY)
 
 	#get query result
-	activities = service.activities().list(userId=Q,maxResults=100,collection='public').execute()
+	#NOTE: this is the reduced amount of maximum results because my maltego client
+	#was raising error of too long XML stream,
+	#if you want to get more, just change it (max available: 100)
+	max=15
+	
+	activities = service.activities().list(userId=Q,maxResults=max,collection='public').execute()
 
 	for activity in activities['items']:
 		value = ""
