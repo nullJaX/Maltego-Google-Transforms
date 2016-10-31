@@ -17,16 +17,12 @@ try:
 	service = apiclient.discovery.build('plus', 'v1', http=httplib2.Http(), developerKey=GOOGLEPLUS_API_KEY)
 
 	#get query result
-	urls = service.people().get(userId=Q, fields='urls').execute()
-	for u in urls['urls']:
-		fullname = ""
-		if 'type' in u:
-			fullname += u['type'] + " @ "
-		fullname += u['label']
-		url = me.addEntity("maltego.URL",fullname)
-		url.setType("maltego.URL")
-		url.setValue(fullname)
-		url.addAdditionalFields("url","URL",True,u['value'])
+	places = service.people().get(userId=Q, fields='placesLived').execute()
+	for place in places['placesLived']:
+		p = me.addEntity("maltego.City",place['value'])
+		if 'primary' in place:
+			if place['primary']:
+				p.setNote("This is a primary place.")
 	me.heartbeat()
 	me.returnOutput()
 except:

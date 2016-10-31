@@ -1,7 +1,7 @@
 TODO:
 
 I People
-	1. User2URLs(implemented), User2Organizations, User2Places, User2Skills (implementation in v2.0)
+	1. User2URLs(implemented), User2Organizations(implemented), User2Places(implemented)
 	2. listByActivity (errors during the execution)
 		https://developers.google.com/+/web/api/rest/latest/people/listByActivity
 	
